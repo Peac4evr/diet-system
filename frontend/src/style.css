@@ -1,0 +1,94 @@
+@font-face {
+  font-family: 'LXGW WenKai';
+  src: url('/fonts/LXGWWenKai-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Nunito';
+  src: url('/fonts/nunito-400.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Nunito';
+  src: url('/fonts/nunito-600.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Nunito';
+  src: url('/fonts/nunito-700.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Nunito';
+  src: url('/fonts/nunito-800.woff2') format('woff2');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --el-color-primary: #10b981;
+  --el-color-primary-light-3: #34d399;
+  --el-color-primary-light-5: #6ee7b7;
+  --el-color-primary-light-7: #a7f3d0;
+  --el-color-primary-light-8: #d1fae5;
+  --el-color-primary-light-9: #ecfdf5;
+  --el-color-primary-dark-2: #059669;
+
+  --el-color-success: #10b981;
+  --el-color-warning: #f59e0b;
+  --el-color-danger: #f43f5e;
+  --el-color-error: #f43f5e;
+  --el-color-info: #64748b;
+
+  --el-font-size-base: 16px;
+  --brand: #10b981;
+  --brand-strong: #059669;
+  --brand-soft: #ecfdf5;
+  --bg: #f4f8f6;
+  --text-main: #1f2937;
+  --text-sub: #6b7280;
+  --text-faint: #9ca3af;
+  --border: #e5e7eb;
+  --energy: #f59e0b;
+  --protein: #3b82f6;
+  --fat: #fbbf24;
+  --carbs: #22c55e;
+}
+
+* { box-sizing: border-box; }
+
+html, body { height: 100%; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text-main);
+  font-family: 'Nunito', 'LXGW WenKai', -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  font-size: 17px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 22px 24px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, .05);
+}
+
+.page-title { font-size: 36px; font-weight: 700; margin: 0 0 4px; }
+.page-sub { font-size: 16px; color: var(--text-sub); margin: 0 0 20px; }
+.big-number { font-size: 32px; font-weight: 700; }
+/* 各类卡片 / 区块标题放大 */
+.chart-title, .confirm-title, .sub-title, .card-title, .result-title {
+  font-size: 18px !important;
+}

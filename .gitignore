@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# 密钥/环境（含 DeepSeek API 密钥，绝不能提交）
+.env
+.env.*
+
+# 前端
+node_modules/
+dist/
+.vscode/
+
+# IDE
+.idea/
+*.iml
+
+# 系统
+.DS_Store
+Thumbs.db
+
+# 日志/临时
+*.log
+*.tmp
